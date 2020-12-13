@@ -200,6 +200,36 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "[Streamlabs] Alert Box",
+            "prev_ver": 436207618,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "url": "https://streamlabs.com/alert-box/v3/BDE5390AD381B8130B22"
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
@@ -350,8 +380,10 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Picks & Bans UI": [],
+                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.hide_scene_item.[Web] Background": [],
                 "libobs.show_scene_item.Picks & Bans UI": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.show_scene_item.[Web] Background": []
             },
             "id": "scene",
@@ -367,7 +399,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 13,
                 "items": [
                     {
                         "align": 5,
@@ -426,6 +458,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 13,
+                        "locked": false,
+                        "name": "[Streamlabs] Alert Box",
+                        "pos": {
+                            "x": 210.0,
+                            "y": 155.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40874999761581421,
+                            "y": 0.40833333134651184
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -442,8 +503,10 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Prodraft Spectator": [],
+                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.hide_scene_item.[Web] Background": [],
                 "libobs.show_scene_item.Prodraft Spectator": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.show_scene_item.[Web] Background": []
             },
             "id": "scene",
@@ -459,7 +522,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 5,
+                "id_counter": 6,
                 "items": [
                     {
                         "align": 5,
@@ -518,6 +581,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": false,
+                        "name": "[Streamlabs] Alert Box",
+                        "pos": {
+                            "x": 210.0,
+                            "y": 155.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40874999761581421,
+                            "y": 0.40833333134651184
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -534,7 +626,9 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Game capture": [],
-                "libobs.show_scene_item.Game capture": []
+                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
+                "libobs.show_scene_item.Game capture": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": []
             },
             "id": "scene",
             "mixers": 0,
@@ -549,7 +643,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 4,
                 "items": [
                     {
                         "align": 5,
@@ -576,6 +670,35 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": false,
+                        "name": "[Streamlabs] Alert Box",
+                        "pos": {
+                            "x": 210.0,
+                            "y": 155.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40874999761581421,
+                            "y": 0.40833333134651184
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -658,11 +781,13 @@
                 "libobs.hide_scene_item.Message": [],
                 "libobs.hide_scene_item.VS": [],
                 "libobs.hide_scene_item.Visitor team logo": [],
+                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.hide_scene_item.[Web] Background": [],
                 "libobs.show_scene_item.Local team logo": [],
                 "libobs.show_scene_item.Message": [],
                 "libobs.show_scene_item.VS": [],
                 "libobs.show_scene_item.Visitor team logo": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.show_scene_item.[Web] Background": []
             },
             "id": "scene",
@@ -678,7 +803,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 25,
+                "id_counter": 26,
                 "items": [
                     {
                         "align": 5,
@@ -824,6 +949,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 26,
+                        "locked": false,
+                        "name": "[Streamlabs] Alert Box",
+                        "pos": {
+                            "x": 210.0,
+                            "y": 155.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40874999761581421,
+                            "y": 0.40833333134651184
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -842,10 +996,12 @@
                 "libobs.hide_scene_item.Local team logo": [],
                 "libobs.hide_scene_item.VS": [],
                 "libobs.hide_scene_item.Visitor team logo": [],
+                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.hide_scene_item.[Web] Background": [],
                 "libobs.show_scene_item.Local team logo": [],
                 "libobs.show_scene_item.VS": [],
                 "libobs.show_scene_item.Visitor team logo": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
                 "libobs.show_scene_item.[Web] Background": []
             },
             "id": "scene",
@@ -861,7 +1017,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 22,
+                "id_counter": 25,
                 "items": [
                     {
                         "align": 5,
@@ -975,6 +1131,35 @@
                         "scale": {
                             "x": 0.30689653754234314,
                             "y": 0.30744850635528564
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 25,
+                        "locked": false,
+                        "name": "[Streamlabs] Alert Box",
+                        "pos": {
+                            "x": 210.0,
+                            "y": 155.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40874999761581421,
+                            "y": 0.40833333134651184
                         },
                         "scale_filter": "disable",
                         "visible": true
