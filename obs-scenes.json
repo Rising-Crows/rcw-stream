@@ -62,8 +62,8 @@
         "versioned_id": "wasapi_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Casters",
-    "current_scene": "Casters",
+    "current_program_scene": "Prodraft",
+    "current_scene": "Prodraft",
     "current_transition": "Desvanecimiento",
     "groups": [],
     "modules": {
@@ -220,12 +220,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "close_when_inactive": true,
-                "local_file": "C:/Users/Pedro/Documents/worlds-2020-draft-theme.mp3",
+                "local_file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/bgm/worlds-2020-draft-theme.mp3",
                 "looping": true
             },
             "sync": 0,
             "versioned_id": "ffmpeg_source",
-            "volume": 0.027850877493619919
+            "volume": 0.030404578894376755
         },
         {
             "balance": 0.5,
@@ -414,6 +414,35 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 15,
+                        "locked": false,
+                        "name": "Draft music",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
                         "crop_bottom": 599,
                         "crop_left": 0,
                         "crop_right": 0,
@@ -489,35 +518,6 @@
                         "scale": {
                             "x": 0.40376266837120056,
                             "y": 0.40375000238418579
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 15,
-                        "locked": false,
-                        "name": "Draft music",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
