@@ -4,59 +4,6 @@
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
-        "filters": [
-            {
-                "balance": 0.5,
-                "deinterlace_field_order": 0,
-                "deinterlace_mode": 0,
-                "enabled": true,
-                "flags": 0,
-                "hotkeys": {},
-                "id": "noise_suppress_filter",
-                "mixers": 255,
-                "monitoring_type": 0,
-                "muted": false,
-                "name": "Eliminación de ruido",
-                "prev_ver": 436207618,
-                "private_settings": {},
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "settings": {
-                    "method": "speex",
-                    "suppress_level": -25
-                },
-                "sync": 0,
-                "versioned_id": "noise_suppress_filter_v2",
-                "volume": 1.0
-            },
-            {
-                "balance": 0.5,
-                "deinterlace_field_order": 0,
-                "deinterlace_mode": 0,
-                "enabled": true,
-                "flags": 0,
-                "hotkeys": {},
-                "id": "compressor_filter",
-                "mixers": 255,
-                "monitoring_type": 0,
-                "muted": false,
-                "name": "Compresor",
-                "prev_ver": 436207618,
-                "private_settings": {},
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "settings": {
-                    "output_gain": 11.5
-                },
-                "sync": 0,
-                "versioned_id": "compressor_filter",
-                "volume": 1.0
-            }
-        ],
         "flags": 0,
         "hotkeys": {
             "libobs.mute": [],
@@ -69,7 +16,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "Mic/Aux",
-        "prev_ver": 436207618,
+        "prev_ver": 436273153,
         "private_settings": {
             "mixer_hidden": false,
             "volume_locked": false
@@ -102,7 +49,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Audio del escritorio",
-        "prev_ver": 436207618,
+        "prev_ver": 436273153,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -115,8 +62,8 @@
         "versioned_id": "wasapi_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Starting soon",
-    "current_scene": "Starting soon",
+    "current_program_scene": "Casters",
+    "current_scene": "Casters",
     "current_transition": "Desvanecimiento",
     "groups": [],
     "modules": {
@@ -131,6 +78,9 @@
             "enabled": false,
             "lang_id": 3082,
             "provider": "mssapi",
+            "source": ""
+        },
+        "decklink_captions": {
             "source": ""
         },
         "output-timer": {
@@ -187,13 +137,96 @@
             "name": "Prodraft"
         },
         {
-            "name": "Picks & Bans"
-        },
-        {
             "name": "Game"
         }
     ],
     "sources": [
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Discord",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "window": "#22📺streams - Discord:Chrome_WidgetWin_1:Discord.exe"
+            },
+            "sync": 0,
+            "versioned_id": "window_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Background",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/layout/starting-soon.png"
+            },
+            "sync": 0,
+            "versioned_id": "image_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Draft music",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "close_when_inactive": true,
+                "local_file": "C:/Users/Pedro/Documents/worlds-2020-draft-theme.mp3",
+                "looping": true
+            },
+            "sync": 0,
+            "versioned_id": "ffmpeg_source",
+            "volume": 0.027850877493619919
+        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -211,7 +244,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Streamlabs] Alert Box",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -236,14 +269,14 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Visitor team logo",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/team-logo/just-basics.png"
+                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/team-logo/el-toro-gaming.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -261,7 +294,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Local team logo",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -291,7 +324,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Prodraft Spectator",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -299,72 +332,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "http://prodraft.leagueoflegends.com/?draft=c584b120-3d14-11eb-8308-7584c71bcead&locale=en_US",
-                "width": 1920
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "[Web] Background",
-            "prev_ver": 436207618,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "url": "https://raw.githubusercontent.com/Rising-Crows/rcw-stream/main/layout/background-particles.png",
-                "width": 1920
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Picks & Bans UI",
-            "prev_ver": 436207618,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "is_local_file": false,
-                "url": "http://localhost:3000/?backend=ws://localhost:8999",
+                "url": "http://prodraft.leagueoflegends.com/?draft=45cd7280-529c-11eb-8308-7584c71bcead&locale=en_US",
                 "width": 1920
             },
             "sync": 0,
@@ -379,142 +347,27 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Picks & Bans UI": [],
-                "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.hide_scene_item.[Web] Background": [],
-                "libobs.show_scene_item.Picks & Bans UI": [],
-                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.show_scene_item.[Web] Background": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Picks & Bans",
-            "prev_ver": 436207618,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 13,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 12,
-                        "locked": false,
-                        "name": "[Web] Background",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "Picks & Bans UI",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 13,
-                        "locked": false,
-                        "name": "[Streamlabs] Alert Box",
-                        "pos": {
-                            "x": 210.0,
-                            "y": 155.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.40874999761581421,
-                            "y": 0.40833333134651184
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Background particles": [],
+                "libobs.hide_scene_item.Discord": [],
+                "libobs.hide_scene_item.Draft music": [],
+                "libobs.hide_scene_item.Local team logo": [],
                 "libobs.hide_scene_item.Prodraft Spectator": [],
+                "libobs.hide_scene_item.Visitor team logo": [],
                 "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.hide_scene_item.[Web] Background": [],
+                "libobs.show_scene_item.Background particles": [],
+                "libobs.show_scene_item.Discord": [],
+                "libobs.show_scene_item.Draft music": [],
+                "libobs.show_scene_item.Local team logo": [],
                 "libobs.show_scene_item.Prodraft Spectator": [],
-                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.show_scene_item.[Web] Background": []
+                "libobs.show_scene_item.Visitor team logo": [],
+                "libobs.show_scene_item.[Streamlabs] Alert Box": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Prodraft",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -522,7 +375,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 17,
                 "items": [
                     {
                         "align": 5,
@@ -537,9 +390,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 17,
                         "locked": false,
-                        "name": "[Web] Background",
+                        "name": "Background particles",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -571,13 +424,129 @@
                         "name": "Prodraft Spectator",
                         "pos": {
                             "x": 0.0,
-                            "y": 281.0
+                            "y": 593.0860595703125
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0114582777023315,
                             "y": 1.012295126914978
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": false,
+                        "name": "Local team logo",
+                        "pos": {
+                            "x": 46.0,
+                            "y": 711.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.3414405882358551,
+                            "y": 0.34125000238418579
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Visitor team logo",
+                        "pos": {
+                            "x": 1573.0,
+                            "y": 678.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40376266837120056,
+                            "y": 0.40375000238418579
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 15,
+                        "locked": false,
+                        "name": "Draft music",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 12,
+                        "crop_left": 397,
+                        "crop_right": 7,
+                        "crop_top": 77,
+                        "group_item_backup": false,
+                        "id": 16,
+                        "locked": false,
+                        "name": "Discord",
+                        "pos": {
+                            "x": 494.0,
+                            "y": 21.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.42535600066184998,
+                            "y": 0.42564490437507629
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -635,7 +604,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Game",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -691,14 +660,14 @@
                         "locked": false,
                         "name": "[Streamlabs] Alert Box",
                         "pos": {
-                            "x": 210.0,
-                            "y": 155.0
+                            "x": 179.0,
+                            "y": 138.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.40874999761581421,
-                            "y": 0.40833333134651184
+                            "x": 0.47124999761581421,
+                            "y": 0.47166666388511658
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -707,38 +676,6 @@
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "VS",
-            "prev_ver": 436207618,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color": 4294942955,
-                "font": {
-                    "face": "Roboto",
-                    "flags": 3,
-                    "size": 72,
-                    "style": "Bold Italic"
-                },
-                "text": "VS"
-            },
-            "sync": 0,
-            "versioned_id": "text_gdiplus_v2",
             "volume": 1.0
         },
         {
@@ -756,7 +693,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Game capture",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -777,25 +714,23 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Background": [],
                 "libobs.hide_scene_item.Local team logo": [],
-                "libobs.hide_scene_item.Message": [],
-                "libobs.hide_scene_item.VS": [],
+                "libobs.hide_scene_item.Mensaje": [],
                 "libobs.hide_scene_item.Visitor team logo": [],
                 "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.hide_scene_item.[Web] Background": [],
+                "libobs.show_scene_item.Background": [],
                 "libobs.show_scene_item.Local team logo": [],
-                "libobs.show_scene_item.Message": [],
-                "libobs.show_scene_item.VS": [],
+                "libobs.show_scene_item.Mensaje": [],
                 "libobs.show_scene_item.Visitor team logo": [],
-                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.show_scene_item.[Web] Background": []
+                "libobs.show_scene_item.[Streamlabs] Alert Box": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Starting soon",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -803,7 +738,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 26,
+                "id_counter": 31,
                 "items": [
                     {
                         "align": 5,
@@ -818,9 +753,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 20,
+                        "id": 30,
                         "locked": false,
-                        "name": "[Web] Background",
+                        "name": "Background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -830,35 +765,6 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Message",
-                        "pos": {
-                            "x": 681.0,
-                            "y": 848.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.96321070194244385,
-                            "y": 0.95833331346511841
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -880,43 +786,14 @@
                         "locked": false,
                         "name": "Visitor team logo",
                         "pos": {
-                            "x": 1273.0,
-                            "y": 366.0
+                            "x": 1417.0,
+                            "y": 441.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.60517239570617676,
-                            "y": 0.60538828372955322
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": false,
-                        "name": "VS",
-                        "pos": {
-                            "x": 932.0,
-                            "y": 500.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.47901591658592224,
+                            "y": 0.47874999046325684
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -938,14 +815,43 @@
                         "locked": false,
                         "name": "Local team logo",
                         "pos": {
-                            "x": 251.0,
-                            "y": 352.0
+                            "x": 132.0,
+                            "y": 338.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.61500000953674316,
-                            "y": 0.61550635099411011
+                            "x": 0.42843779921531677,
+                            "y": 0.42875000834465027
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 31,
+                        "locked": false,
+                        "name": "Mensaje",
+                        "pos": {
+                            "x": 341.0,
+                            "y": 116.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.1473684310913086,
+                            "y": 1.1458333730697632
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -967,14 +873,14 @@
                         "locked": false,
                         "name": "[Streamlabs] Alert Box",
                         "pos": {
-                            "x": 210.0,
-                            "y": 155.0
+                            "x": 44.0,
+                            "y": 703.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.40874999761581421,
-                            "y": 0.40833333134651184
+                            "x": 0.57625001668930054,
+                            "y": 0.57666665315628052
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -993,23 +899,23 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Background particles": [],
+                "libobs.hide_scene_item.Discord": [],
                 "libobs.hide_scene_item.Local team logo": [],
-                "libobs.hide_scene_item.VS": [],
                 "libobs.hide_scene_item.Visitor team logo": [],
                 "libobs.hide_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.hide_scene_item.[Web] Background": [],
+                "libobs.show_scene_item.Background particles": [],
+                "libobs.show_scene_item.Discord": [],
                 "libobs.show_scene_item.Local team logo": [],
-                "libobs.show_scene_item.VS": [],
                 "libobs.show_scene_item.Visitor team logo": [],
-                "libobs.show_scene_item.[Streamlabs] Alert Box": [],
-                "libobs.show_scene_item.[Web] Background": []
+                "libobs.show_scene_item.[Streamlabs] Alert Box": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Casters",
-            "prev_ver": 436207618,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1017,7 +923,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 25,
+                "id_counter": 37,
                 "items": [
                     {
                         "align": 5,
@@ -1032,9 +938,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 19,
+                        "id": 37,
                         "locked": false,
-                        "name": "[Web] Background",
+                        "name": "Background particles",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1061,41 +967,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 20,
-                        "locked": false,
-                        "name": "VS",
-                        "pos": {
-                            "x": 979.0,
-                            "y": 897.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 21,
+                        "id": 28,
                         "locked": false,
                         "name": "Local team logo",
                         "pos": {
-                            "x": 715.0,
-                            "y": 841.0
+                            "x": 27.0,
+                            "y": 818.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1119,21 +996,50 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 22,
+                        "id": 29,
                         "locked": false,
                         "name": "Visitor team logo",
                         "pos": {
-                            "x": 1107.0,
-                            "y": 837.0
+                            "x": 1661.0,
+                            "y": 789.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.30689653754234314,
-                            "y": 0.30744850635528564
+                            "x": 0.34442836046218872,
+                            "y": 0.3449999988079071
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 7,
+                        "crop_left": 390,
+                        "crop_right": 0,
+                        "crop_top": 85,
+                        "group_item_backup": false,
+                        "id": 34,
+                        "locked": false,
+                        "name": "Discord",
+                        "pos": {
+                            "x": 286.0,
+                            "y": 95.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.63665592670440674,
+                            "y": 0.63657057285308838
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1152,14 +1058,14 @@
                         "locked": false,
                         "name": "[Streamlabs] Alert Box",
                         "pos": {
-                            "x": 210.0,
-                            "y": 155.0
+                            "x": 708.0,
+                            "y": 21.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.40874999761581421,
-                            "y": 0.40833333134651184
+                            "x": 0.65375000238418579,
+                            "y": 0.65333330631256104
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1181,25 +1087,54 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Message",
-            "prev_ver": 436207618,
+            "name": "Mensaje",
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "color": 4294942955,
+                "color": 4290929354,
                 "font": {
-                    "face": "Roboto",
-                    "flags": 3,
-                    "size": 72,
-                    "style": "Bold Italic"
+                    "face": "ROBOTECH GP",
+                    "flags": 0,
+                    "size": 144,
+                    "style": "Normal"
                 },
-                "text": "¡Empezamos en breve!"
+                "gradient": false,
+                "outline": true,
+                "outline_color": 4278190080,
+                "outline_size": 3,
+                "text": "Empezamos en breve"
             },
             "sync": 0,
             "versioned_id": "text_gdiplus_v2",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Background particles",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/layout/background-particles.png"
+            },
+            "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         }
     ],
