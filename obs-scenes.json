@@ -185,7 +185,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/layout/starting-soon.png"
+                "file": "C:/rcw-stream/layout/starting-soon.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -220,7 +220,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "close_when_inactive": true,
-                "local_file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/bgm/worlds-2020-draft-theme.mp3",
+                "local_file": "C:/rcw-stream/bgm/worlds-2020-draft-theme.mp3",
                 "looping": true
             },
             "sync": 0,
@@ -276,7 +276,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/team-logo/el-toro-gaming.png"
+                "file": "C:/rcw-stream/team-logo/el-toro-gaming.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -301,7 +301,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/team-logo/rising-crows.png"
+                "file": "C:/rcw-stream/team-logo/rising-crows.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -1131,7 +1131,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Pedro/Documents/Rising Crows/rcw-stream/layout/background-particles.png"
+                "file": "C:/rcw-stream/layout/background-particles.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
