@@ -62,8 +62,8 @@
         "versioned_id": "wasapi_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Prodraft",
-    "current_scene": "Prodraft",
+    "current_program_scene": "Starting soon",
+    "current_scene": "Starting soon",
     "current_transition": "Desvanecimiento",
     "groups": [],
     "modules": {
@@ -210,7 +210,7 @@
             "id": "ffmpeg_source",
             "mixers": 255,
             "monitoring_type": 0,
-            "muted": true,
+            "muted": false,
             "name": "Draft music",
             "prev_ver": 436273153,
             "private_settings": {},
